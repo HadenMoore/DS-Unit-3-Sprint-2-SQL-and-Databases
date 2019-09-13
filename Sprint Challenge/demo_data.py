@@ -1,6 +1,6 @@
 import sqlite3 
 
-# Part 1
+# Part 1: Making and Populating a Database
 
 # Opening a'blank' DataBase File Connection 
 # 'demo_data.sqlite3
@@ -52,7 +52,7 @@ queries = ["SELECT COUNT(*) FROM demo;",
            "SELECT COUNT(*) FROM demo WHERE x >= 5 AND y >= 5;",
            "SELECT COUNT(DISTINCT y) FROM demo;"] 
 
-# Iterating over and printing each question, execute the query, and print result.
+# Iterating, executing, and printing the questions and results:
 for i in range(len(questions)):
   print(questions[i])
   curs.execute(queries[i])
